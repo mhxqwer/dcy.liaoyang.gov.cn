@@ -1,0 +1,434 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "SourceHanSansCN-Regular";
+  src: url("../fonts/sourcehansanscn-regular.woff") format("woff"), url("../fonts/sourcehansanscn-regular.ttf") format("truetype"), url("../fonts/sourcehansanscn-regular.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "SourceHanSansCN-Medium";
+  src: url("../fonts/sourcehansanscn-medium.woff") format("woff"), url("../fonts/sourcehansanscn-medium.eot") format("embedded-opentype"), url("../fonts/sourcehansanscn-medium.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* yui3 reset.css */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+
+legend {
+  color: #000;
+}
+
+iframe {
+  display: block;
+}
+
+/* yui3 fonts */
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: "SourceHanSansCN-Regular";
+}
+
+select,
+input,
+button,
+textarea {
+  font: 99% arial, helvetica, clean, sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea {
+  font-family: "SourceHanSansCN-Regular";
+  border: 0;
+  outline: 0;
+}
+
+input[type=text]::-ms-clear,
+input[type=password]::-ms-reveal {
+  display: none;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: #999;
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+  color: #999;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+.placeholder {
+  color: #999;
+}
+
+/* utilities */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.l {
+  float: left !important;
+}
+
+.r {
+  float: right !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.trans {
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 通用样式 */
+/* footer */
+.footer {
+  margin-top: 40px;
+  padding: 17px 0;
+  background: url("../images/footer_bg.jpg") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.footer-chosen-cont,
+.footer-link {
+  float: left;
+}
+
+.footer-chosen-cont {
+  width: 227px;
+}
+
+.footer-chosen:last-child {
+  margin-top: 16px;
+}
+
+/* chosen */
+.footer-select {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+}
+
+/* 外表 */
+.chosen-container {
+  display: block;
+  width: 100% !important;
+}
+
+.footer-chosen .chosen-container-single .chosen-single {
+  height: 48px;
+  line-height: 48px;
+  padding-left: 13px;
+  text-align: left;
+  border: none;
+  background: rgba(75, 75, 75, 0.6);
+  box-sizing: border-box;
+}
+
+.footer-chosen .chosen-container-active.chosen-with-drop .chosen-single {
+  box-shadow: none;
+}
+
+/* 文字 */
+.footer-chosen .chosen-container-single .chosen-single span {
+  margin-right: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* 下拉框符号 */
+.footer-chosen .chosen-container-single .chosen-single div {
+  width: 40px;
+}
+
+.footer-chosen .chosen-container-single .chosen-single div b {
+  background: url("../images/chosen_down.png") center center no-repeat;
+}
+
+
+/* 选项 */
+.footer-chosen .chosen-container .chosen-drop {
+  bottom: 48px;
+  padding: 0;
+  border: none;
+}
+
+.footer-chosen .chosen-container .chosen-results {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #393a3a;
+}
+
+.footer-chosen .chosen-container .chosen-results li {
+  text-align: left;
+  padding: 6px 13px;
+}
+
+.footer-chosen .chosen-container .chosen-results li.highlighted {
+  background-color: #fff;
+  color: #393a3a;
+}
+
+.footer-chosen .chosen-container-active.chosen-with-drop .chosen-single div b {
+  background: url("../images/chosen_up.png") center center no-repeat;
+}
+
+.footer-chosen .chosen-container * {
+  box-sizing: inherit;
+}
+
+.footer-link {
+  margin-left: 16px;
+  width: 227px;
+  height: 112px;
+  padding-top: 14px;
+  padding-left: 13px;
+  background: rgba(75, 75, 75, 0.6);
+}
+
+.footer-visit {
+  height: 22px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.footer-zf {
+  margin-top: 16px;
+}
+
+.footer-dzjg {
+  display: inline-block;
+  vertical-align: top;
+  width: 37px;
+  height: 46px;
+  background: url("../images/dzjg.png") center center no-repeat;
+}
+
+.footer-zc {
+  display: inline-block;
+  vertical-align: top;
+  width: 74px;
+  height: 36px;
+  margin: 3px 0 0 17px;
+  background: url("../images/zc.png") center center no-repeat;
+}
+
+.footer-detail {
+  float: right;
+  padding-top: 6px;
+}
+
+.footer-detail>div {
+  line-height: 24px;
+  color: #fff;
+}
+
+.footer-detail a {
+  color: #fff;
+}
+
+.footer-detail span:last-child,
+.footer-ab a:last-child {
+  margin-left: 12px;
+}
+
+
+/* pad */
+@media (max-width:979px) {
+  .footer-chosen-cont {
+    margin-left: 144px;
+  }
+
+  .footer-detail {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* phone */
+@media (max-width:767px) {
+  .footer-chosen-cont {
+    float: initial;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-link {
+    float: initial;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .footer-detail span,
+  .footer-ab a {
+    display: block;
+  }
+
+  .footer-detail span:last-child,
+  .footer-ab a:last-child {
+    margin-left: 0;
+  }
+}

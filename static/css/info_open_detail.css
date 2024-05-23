@@ -1,0 +1,92 @@
+/**!
+* 政府信息公开详情页
+* date:2021-8-2
+* author: tfx;
+*/
+.main {
+    margin-top: 58px;
+}
+
+.title {
+    padding: 15px 30px;
+    line-height: 35px;
+    color: #2d5ab5;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    font-family: "SourceHanSansCN-Medium";
+}
+
+.detail {
+    margin-top: 3px;
+    height: 37px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #999;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.detail a {
+    color: #999;
+}
+
+.content {
+    margin-top: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    font-size: 18px;
+    color: #666;
+}
+
+.content-p {
+    text-indent: 2em;
+}
+
+.detail-left {
+    float: left;
+}
+
+.detail-right {
+    float: right;
+}
+/* 2021-11-26新增 */
+.title {
+    font-size: 32px;
+}
+
+.detail {
+    text-align: center;
+    font-size: 15px;
+}
+
+.detail>span {
+    margin-left: 10px;
+}
+
+.detail>span:first-child {
+    margin-left: 0;
+}
+
+/* 2021-11-26结束 */
+/* phone */
+@media (max-width:767px) {
+    .detail {
+        height: auto;
+        text-align: center;
+        line-height: 25px;
+        padding-bottom: 5px;
+    }
+
+    .detail span {
+        display: block;
+    }
+
+    .detail-left,
+    .detail-right {
+        float: inherit;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+}
